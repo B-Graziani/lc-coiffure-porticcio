@@ -20,5 +20,15 @@
 <%#= link_to "ajouter une photo", new_article_path  %>
 
 <!-- Feature start -->
+<ul>
+  <% @articles.each do |article| %>
+  <li>
+    <%= article.title %>
+    <br>
+    <%= article.description %>
+    <%= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
+  </li>
 
+  <% end %>
+</ul>
 <!-- Feature end -->
