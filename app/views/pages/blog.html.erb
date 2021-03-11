@@ -23,7 +23,10 @@
 <ul>
   <% @articles.each do |article| %>
   <li>
-    <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
+    <% if article.photo.attached? %>
+      <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+
     <br>
     <%= article.title %>
     <br>
