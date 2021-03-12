@@ -211,17 +211,65 @@
         <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/lccoiffureporticcio/?hl=fr"><i class="fab fa-instagram"></i></a>
         <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest"></i></a>
+
         <% if user_signed_in? %>
         <%= link_to  destroy_user_session_path, method: :delete do %>
         <i class="fas fa-cut"></i>
         <% end %>
         <% else %>
-          <%= link_to new_user_session_path do %>
-          <i class="fas fa-cut"></i>
-          <% end %>
-          <% end %>
+          <button id="ouvert"><i class="fas fa-cut"></i></button>
+<div class="jean_pierre" id="jean_pierre">
+  <div class="jean">
+    <div class="connexion">
+      <h2>Log in</h2>
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="form-inputs">
+            <%= f.input :email,
+            required: false,
+            autofocus: true,
+            input_html: { autocomplete: "email" } %>
+            <%= f.input :password,
+            required: false,
+            input_html: { autocomplete: "current-password" } %>
+            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, "Log in" %>
+    </div>
+    <% end %>
+    <button id="fermé">Retour</button>
+  </div>
+</div>
+
+
+
+        <% end %>
         <p>Copyright Graziani2.0</p>
      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

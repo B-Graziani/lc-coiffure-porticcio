@@ -243,7 +243,7 @@ nav ul li a{
   color: #ebd8b7;
   font-weight: bold;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: inline-block;
 }
 .title-text p::after {
@@ -577,7 +577,10 @@ hr {
 .social-links {
   text-align: center;
 }
+.social-links button {
 
+  border-style: none;
+}
 .social-links .fab{
   height: 40px;
   width: 40px;
