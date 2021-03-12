@@ -1,39 +1,75 @@
-<div id="sideNav">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#banner">Accueil</a></li>
-          <!-- <li><a href="#banner">Accueil</a></li> -->
-          <li><a href="#feature">Présentation</a></li>
-          <li><a href="#service">Photos</a></li>
-          <li><a href="#testimonial">Avis</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div id="menuBtn">
-    </div>
-<h1>blog page</h1>
-<a href= "/articles/new" ><span></span>ajouter une photo</a>
-<br>
-<%= link_to "retour", root_path  %>
+<%= render 'shared/sideNav' %>
+<section id="service">
+
 
 <%#= link_to "ajouter une photo", new_article_path  %>
+<div class="title-text">
+          <p>PHOTOS</p>
+          <h1>Quelques moments</h1>
+        </div>
+<a href= "/articles/new" ><span></span>ajouter une photo</a>
+<br>
+
+<div class="articles-box">
+
 
 <!-- Feature start -->
 <ul>
   <% @articles.each do |article| %>
+  <div class="single-service">
   <li>
     <% if article.photo.attached? %>
-      <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
+      <%#= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag article.photo.key %>
     <% end %>
-
-    <br>
+    <div class="overlay"></div>
+    <div class="service-desc">
     <%= article.title %>
-    <br>
+    <hr>
     <%= article.description %>
     <%= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
   </li>
-
+  </div>
   <% end %>
 </ul>
 <!-- Feature end -->
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

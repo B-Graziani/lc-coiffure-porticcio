@@ -6,7 +6,42 @@
   height: 100vh;
   width: 100%;
 }
+.banner-blog {
+  background: linear-gradient(rgba(0,0,0,0.5),#ebd8b7);
+  height: 33vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 
+  img {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  object-fit : cover;
+  z-index: -1;
+  height: 33vh;
+  }
+}
+.banner-blog-logo-call {
+  width: 100vw;
+  display: flex;
+   background: red;
+   position: absolute;
+   z-index: 1;
+
+  top: 20px;
+img {
+  width: 50px;
+  height:50px;
+  object-fit: contain;
+}
+a {
+  width: 50px;
+  height:50px;
+
+}
+}
 .banner img {
   background-position: center;
   background-size: cover;
@@ -472,7 +507,7 @@ hr {
 }
 .footer-img {
   // max-width: 370px;
-  opacity: 0.3;
+  opacity: 0.02;
   position: absolute;
   // left: 50%;
   // top: 45%;
