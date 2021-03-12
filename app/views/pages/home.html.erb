@@ -208,32 +208,27 @@
           </div>
         </div>
         <div class="social-links">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-pinterest"></i>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/lccoiffureporticcio/?hl=fr"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest"></i></a>
+        <% if user_signed_in? %>
+        <%= link_to  destroy_user_session_path, method: :delete do %>
         <i class="fas fa-cut"></i>
-        <p>Copyright Graziani2.0</p>
-
-
-
-        <div class="connexion">
-          <% if user_signed_in? %>
-
-          <%= link_to  destroy_user_session_path, method: :delete do %>
-          <%= image_tag "power-button.png" %>
-          <% end %>
-
-          <% else %>
+        <% end %>
+        <% else %>
           <%= link_to new_user_session_path do %>
-          <%= image_tag "lightbulb.png" %>
+          <i class="fas fa-cut"></i>
           <% end %>
           <% end %>
-        </div>
-
-
-
+        <p>Copyright Graziani2.0</p>
      </section>
+
+
+
+
+
+
+
 
 
 
