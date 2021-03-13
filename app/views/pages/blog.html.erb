@@ -28,10 +28,13 @@
     <%= article.title %>
     <hr>
     <%= article.description %>
-    <%= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div id="delete-button"><%= link_to "Supprimer", article ,method: :delete, data: { confirm: 'Are you sure?' } %></div>
+
     </div>
+    <%#= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
   </li>
   </div>
+
   <% end %>
 </ul>
 <!-- Feature end -->
