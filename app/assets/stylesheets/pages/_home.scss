@@ -12,6 +12,11 @@
   width: 100%;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 
   img {
   background-position: center;
@@ -22,15 +27,30 @@
   z-index: -1;
   height: 33vh;
   }
+  h1{
+    text-align: center;
+    padding-top: 1em;
+  // font-family: 'Lobster', cursive;
+  // font-family: 'Pacifico', cursive;
+  font-family: 'Fredoka One', cursive;
+  }
+  p {
+    text-align: center;
+
+  }
+  span {
+    color: #bd9354;
+  }
 }
 .banner-blog-logo-call {
-  width: 100vw;
+  width: em;
   display: flex;
-   background: red;
+
    position: absolute;
    z-index: 1;
-
-  top: 20px;
+   left: 1em;
+   top: 20px;
+   // z-index: 10;
 img {
   width: 50px;
   height:50px;
@@ -236,6 +256,9 @@ nav ul li a{
 .title-text{
   text-align: center;
   padding-bottom: 70px;
+  a {
+    text-align: center;
+  }
 }
 .title-text p {
   margin: auto;
@@ -351,9 +374,10 @@ nav ul li a{
   // margin: 0 10px;
   padding: 12px 0;
   color: #bd9354;
-  border: 1px solid #bd9354;
+  border: 1px solid #ebd8b7;
+
   position: relative;
-  z-index: 1;
+  z-index: 0;
   transition: color 0.5s;
   border-radius: 8px;
   text-align: center;
@@ -365,7 +389,7 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background: #bd9354;
+background: #ebd8b7;
 z-index: -1;
 transition: 0.5s ;
 border-radius: 8px;
@@ -376,7 +400,7 @@ border-radius: 8px;
 }
 #service a:hover{
   color: #fff;
-
+  border: #fff;
 }
 .service-box {
   width: 80%;

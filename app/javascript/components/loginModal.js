@@ -4,15 +4,15 @@
 
 const loginModal = () => {
 
-  const ouvert = document.getElementById("ouvert");
+const open = document.getElementById("open");
 const jean_pierre = document.getElementById("jean_pierre");
-const fermé = document.getElementById("fermé");
+const close = document.getElementById("close");
 
-ouvert.addEventListener( "click" , () => {
+open.addEventListener( "click" , () => {
   jean_pierre.classList.add('show');
 });
 
-fermé.addEventListener( "click" , () => {
+close.addEventListener( "click" , () => {
   jean_pierre.classList.remove('show');
 });
 }
