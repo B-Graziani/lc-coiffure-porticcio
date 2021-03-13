@@ -6,7 +6,9 @@
 <div class="title-text">
           <p>PHOTOS</p>
           <h1>Quelques moments</h1>
+          <% if current_user %>
           <a href= "/articles/new" ><span></span>ajouter une photo</a>
+          <% end %>
         </div>
 
 <br>
@@ -28,8 +30,9 @@
     <%= article.title %>
     <hr>
     <%= article.description %>
+    <% if current_user %>
     <div id="delete-button"><%= link_to "Supprimer", article ,method: :delete, data: { confirm: 'Are you sure?' } %></div>
-
+    <% end %>
     </div>
     <%#= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
   </li>

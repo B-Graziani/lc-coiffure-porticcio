@@ -57,9 +57,14 @@ grid-template-columns: 1fr 1fr 1fr ;
 
 .form-actions input {
   background: #0BC47C;
+  opacity: 1;
   margin-bottom: 2em;
   border-radius: 5px;
   color: #fff;
+  &:hover {
+    opacity: 0.7;
+    color: white;
+  }
 }
 
 
@@ -69,6 +74,10 @@ grid-template-columns: 1fr 1fr 1fr ;
   padding: 4px 16px;
   border-radius: 5px;
   color: #fff;
+  &:hover {
+    opacity: 0.7;
+    color: white;
+  }
 }
 
 #delete-button {
