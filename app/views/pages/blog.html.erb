@@ -22,8 +22,8 @@
   <div class="single-service">
   <li>
     <% if article.photo.attached? %>
-      <%#= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
-      <%= cl_image_tag article.photo.key %>
+      <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill, gravity: :faces %>
+      <%#= cl_image_tag article.photo.key %>
     <% end %>
     <div class="overlay"></div>
     <div class="service-desc">
