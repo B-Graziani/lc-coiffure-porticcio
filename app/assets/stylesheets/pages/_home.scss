@@ -41,6 +41,14 @@
   span {
     color: #bd9354;
   }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
 }
 .banner-blog-logo-call {
   width: em;

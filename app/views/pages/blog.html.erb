@@ -1,4 +1,33 @@
-<%= render 'shared/sideNav' %>
+<%#= render 'shared/sideNav' %>
+<!-- <div id="sideNav">
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#banner">Accueil</a></li>
+
+      <li><a href="#feature">Présentation</a></li>
+      <li><a href="#service">Photos</a></li>
+      <li><a href="#testimonial">Avis</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<div id="menuBtn">
+</div> -->
+<div class="banner-blog">
+  <%= image_tag "banner.jpg" %>
+  <%= link_to root_path do %>
+  <h1><span>LC</span> Coiffure</h1>
+  <% end %>
+  <hr>
+  <p>Salon de Coiffure mixte situé à Porticcio en Corse du Sud est heureux de vous souhaitez la Bienvenue
+  </p>
+</div>
+<div class="banner-blog-logo-call">
+
+
+  <a href="tel:+33685143723"><%= image_tag "phone.png" %></a>
+
+</div>
 <section id="service">
 
 
@@ -8,6 +37,17 @@
           <h1>Quelques moments</h1>
           <% if current_user %>
           <a href= "/articles/new" ><span></span>ajouter une photo</a>
+
+          <button id="open">
+            Click me
+          </button>
+          <div class="jean_marie" id="jean_marie">
+            <div class="jean">
+              <h1>Modal are Great</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus reiciendis animi inventore excepturi iure id, maiores laborum, accusantium dolorum tempora voluptates, architecto exercitationem ullam saepe dolores, a et vero. Quidem.</p>
+              <button id="close">shit</button>
+            </div>
+          </div>
           <% end %>
         </div>
 
