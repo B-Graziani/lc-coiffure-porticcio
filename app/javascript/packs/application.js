@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 import { hamburgerResponsive } from'../components/hamburger';
 import { loginModal } from '../components/loginModal';
+import { buttonBlogAction } from '../components/buttonBlog';
 
 
 // Internal imports, e.g:
@@ -35,6 +36,7 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   hamburgerResponsive();
-  loginModal();
+  buttonBlogAction();
+  // loginModal();
 
 });

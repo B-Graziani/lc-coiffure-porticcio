@@ -138,9 +138,9 @@
            </div>
            <%#= link_to "Photos...", blog_pages_path  %>
 
-
-           <a href= "pages/blog" ><span></span>Photos...</a>
-
+           <!-- <a href= "/articles/index" ><span></span>Photos...</a> -->
+           <!-- <a href= "pages/blog" ><span></span>Photos...</a> -->
+           <%= link_to "Photos...", articles_path  %>
 
     </section>
      <!-- Testimonia -->
@@ -222,7 +222,7 @@
         <div class="jean_pierre" id="jean_pierre">
           <div class="jean">
             <div class="connexion">
-              <%= render "shared/form-login" %>
+              <%#= render "shared/form-login" %>
               <button id="close">Retour</button>
             </div>
           </div>
