@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
-      redirect_to blog_pages_path
+      redirect_to articles_path
     else
       redirect_to new_article_path
     end
@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    redirect_to blog_pages_path
+    redirect_to articles_path
   end
 
   private

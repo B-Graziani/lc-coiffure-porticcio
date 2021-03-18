@@ -61,22 +61,22 @@
 <ul>
   <% @articles.each do |article| %>
   <div class="single-service">
-  <li>
-    <% if article.photo.attached? %>
+    <li>
+      <% if article.photo.attached? %>
       <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill, gravity: :faces %>
       <%#= cl_image_tag article.photo.key %>
-    <% end %>
-    <div class="overlay"></div>
-    <div class="service-desc">
-    <%= article.title %>
-    <hr>
-    <%= article.description %>
-    <% if current_user %>
-    <div id="delete-button"><%= link_to "Supprimer", article ,method: :delete, data: { confirm: 'Are you sure?' } %></div>
-    <% end %>
-    </div>
-    <%#= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
-  </li>
+      <% end %>
+      <div class="overlay"></div>
+      <div class="service-desc">
+        <%= article.title %>
+        <hr>
+        <%= article.description %>
+        <% if current_user %>
+        <div id="delete-button"><%= link_to "Supprimer", article ,method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <% end %>
+      </div>
+      <%#= link_to "delete", article ,method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
   </div>
 
   <% end %>
