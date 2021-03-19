@@ -3,14 +3,13 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    @article = Article.new
   end
 
   def show
   end
 
-  def new
-    @article = Article.new
-  end
+
 
   def create
     @article = Article.new(article_params)

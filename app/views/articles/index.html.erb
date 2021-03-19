@@ -3,7 +3,7 @@
   <nav class="nav-bar">
     <ul>
       <li><a href="#banner">Accueil</a></li>
-
+      <li><%= link_to "Accueil", root_path(anchor: "banner")  %></li>
       <li><a href="#feature">Présentation</a></li>
       <li><a href="#service">Photos</a></li>
       <li><a href="#testimonial">Avis</a></li>
@@ -37,7 +37,9 @@
           <h1>Quelques moments</h1>
           <% if current_user %>
           <a href= "/articles/new" ><span></span>ajouter une photo</a>
-
+          <%= link_to  new_article_path do  %>
+          <span></span>ajouter une photo
+          <% end %>
           <button id="open">
             Click me
           </button>
@@ -45,7 +47,17 @@
             <div class="pierre">
 
                 <%#= render "shared/form-new-article" %>
-                <h1>hello ben</h1>
+                <h1>article new form pour entrer photo</h1>
+  <%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :photo, as: :file %>
+  <%= f.button :submit, "Publier"%>
+  <% end %>
+
+
+
+
               <button id="close">shit</button>
             </div>
           </div>
@@ -68,7 +80,7 @@
       <% end %>
       <div class="overlay"></div>
       <div class="service-desc">
-        <%= article.title %>
+        <%= majuscule article.title %>
         <hr>
         <%= article.description %>
         <% if current_user %>
