@@ -138,7 +138,10 @@
            </div>
            <%#= link_to "Photos...", blog_pages_path  %>
 
-           <a href= "/articles" ><span></span>Photos...</a>
+           <!-- <a href= "/articles" ><span></span>Photos...</a> -->
+           <%= link_to articles_path do %>
+           <span></span>Photos
+           <% end %>
            <!-- <a href= "pages/blog" ><span></span>Photos...</a> -->
            <%#= link_to "Photos...", articles_path  %>
 

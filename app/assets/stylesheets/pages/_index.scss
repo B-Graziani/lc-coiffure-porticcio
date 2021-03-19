@@ -44,6 +44,7 @@ grid-template-columns: 1fr 1fr 1fr ;
   pointer-events: auto;
   opacity: 1;
   position: absolute;
+  z-index: 1;
 }
 .pierre {
   background-color: #fff;

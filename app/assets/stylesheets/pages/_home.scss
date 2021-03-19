@@ -210,7 +210,7 @@ nav ul li a{
   background-position: top center;
   width: 50px;
   height:50px;
-  //background: #ebd8b7;
+  //background-color: #ebd8b7;
   text-align: center;
   position: fixed;
   right: 30px;
@@ -229,7 +229,7 @@ nav ul li a{
 
 //
 #menuBtn.active  {
-  background-image: url('close.png');
+  background-image: asset-url('close.png');
   background-size: cover;
   background-position: top center;
 

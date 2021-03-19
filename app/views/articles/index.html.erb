@@ -1,13 +1,11 @@
-<%#= render 'shared/sideNav' %>
 <div id="sideNav">
   <nav class="nav-bar">
     <ul>
-      <li><a href="#banner">Accueil</a></li>
       <li><%= link_to "Accueil", root_path(anchor: "banner")  %></li>
-      <li><a href="#feature">Présentation</a></li>
-      <li><a href="#service">Photos</a></li>
-      <li><a href="#testimonial">Avis</a></li>
-      <li><a href="#footer">Contact</a></li>
+      <li><%= link_to "Présentation", root_path(anchor: "feature")  %></li>
+      <li><%= link_to "Photos", root_path(anchor: "service")  %></li>
+      <li><%= link_to "Avis", root_path(anchor: "testimonial")  %></li>
+      <li><%= link_to "Contact", root_path(anchor: "footer")  %></li>
     </ul>
   </nav>
 </div>
@@ -25,6 +23,8 @@
 <div class="banner-blog-logo-call">
 
 
+
+
   <a href="tel:+33495710820"><%= image_tag "phone.png" %></a>
 
 </div>
@@ -33,36 +33,30 @@
 
 <%#= link_to "ajouter une photo", new_article_path  %>
 <div class="title-text">
-          <p>PHOTOS</p>
-          <h1>Quelques moments</h1>
-          <% if current_user %>
-          <a href= "/articles/new" ><span></span>ajouter une photo</a>
-          <%= link_to  new_article_path do  %>
-          <span></span>ajouter une photo
-          <% end %>
-          <button id="open">
-            Click me
-          </button>
-          <div class="pierre_manu" id="pierre_manu">
-            <div class="pierre">
+  <p>PHOTOS</p>
+  <h1>Quelques moments</h1>
 
-                <%#= render "shared/form-new-article" %>
-                <h1>article new form pour entrer photo</h1>
-  <%= simple_form_for(@article) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :photo, as: :file %>
-  <%= f.button :submit, "Publier"%>
+
+
+
+  <% if current_user %>
+  <button id="open">Add photo
+         </button>
+
+  <div class="pierre_manu" id="pierre_manu">
+    <div class="pierre">
+
+      <%= render "shared/form-new-article" %>
+
+      <!--  <button id="close">shit</button> -->
+    </div>
+  </div>
   <% end %>
 
+</div>
 
 
 
-              <button id="close">shit</button>
-            </div>
-          </div>
-          <% end %>
-        </div>
 
 <br>
 
