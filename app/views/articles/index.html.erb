@@ -1,4 +1,7 @@
-<div id="sideNav">
+<div id="infos">
+  <div class="call">
+    <a href="tel:+33495710820"><i class="fas fa-phone-alt"></i></a>
+  </div><div id="sideNav">
   <nav class="nav-bar">
     <ul>
       <li><%= link_to "Accueil", root_path(anchor: "banner")  %></li>
@@ -9,7 +12,7 @@
     </ul>
   </nav>
 </div>
-<div id="menuBtn">
+<div id="menuBtn"></div>
 </div>
 <div class="banner-blog">
   <%= image_tag "banner.jpg" %>
@@ -20,14 +23,7 @@
   <p>Salon de Coiffure mixte situé à Porticcio en Corse du Sud est heureux de vous souhaitez la Bienvenue
   </p>
 </div>
-<div class="banner-blog-logo-call">
 
-
-
-
-  <a href="tel:+33495710820"><%= image_tag "phone.png" %></a>
-
-</div>
 <section id="service">
 
 
@@ -94,11 +90,11 @@
 
 
 
+
 </section>
 
-
-
 <%= render 'shared/footer' %>
+
 
 
 

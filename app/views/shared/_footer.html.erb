@@ -2,28 +2,20 @@
   <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
   <a href="https://www.instagram.com/lccoiffureporticcio/?hl=fr"><i class="fab fa-instagram"></i></a>
   <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest"></i></a>
-
-  <button id="open">
-    <i class="fas fa-cut"></i>
-  </button>
-
-<div class="pierre_manu" id="pierre_manu">
-  <div class="pierre">
-
-    <button id="close">Retour</button>
-
+  <% if user_signed_in? %>
+  <%= link_to  destroy_user_session_path, method: :delete do %>
+  <button id="open"><i class="fas fa-cut"></i></button>
+  <% end %>
+  <% else %>
+  <button id="open"><i class="fas fa-cut"></i></button>
+  <div class="pierre_manu" id="pierre_manu">
+    <div class="pierre">
+      <%= render "shared/form-login" %>
+      <button id="close">Retour</button>
+    </div>
   </div>
-  </div>
-
-
-
+  <% end %>
 </div>
-
-
-
-
-
-
 
 
 

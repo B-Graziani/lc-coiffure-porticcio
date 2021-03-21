@@ -27,7 +27,7 @@ import "bootstrap";
 import { hamburgerResponsive } from'../components/hamburger';
 import { loginModal } from '../components/loginModal';
 import { buttonBlogAction } from '../components/buttonBlog';
-
+import { navbarJs } from'../components/navbar';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -38,5 +38,5 @@ document.addEventListener('turbolinks:load', () => {
   hamburgerResponsive();
   buttonBlogAction();
   // loginModal();
-
+  navbarJs();
 });

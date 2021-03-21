@@ -81,7 +81,7 @@ a {
 }
 .call {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 25px;
   left: 30px;
   z-index: 10;
@@ -89,7 +89,7 @@ a {
     font-size: 40px;
     width: 50px;
     height: 50px;
-    color: #ebd8b7;
+    color: #FFF;
   }
 }
 @media screen and (min-width: 770px) {
@@ -220,10 +220,30 @@ nav ul li a{
   cursor: pointer;
 
 }
+#menuBtn:after {
+  position: absolute;
+  content:"";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  animation: hamburger_puls 1.2s ease infinite;
+  right: 1px;
+}
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
 @media screen and (min-width: 770px) {
  #menuBtn {
-  width: 66px;
-    height: 66px;
+  width: 50px;
+    height: 50px;
  }
 }
 
