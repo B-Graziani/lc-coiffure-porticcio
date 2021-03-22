@@ -166,15 +166,31 @@ grid-template-columns: 1fr 1fr 1fr ;
 }
 
 #infos {
-  height: 106px;
-    width: 100vw;
-    background-color: transparent;
-    position: fixed;
-    z-index: 33;
-    top: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  z-index: 33;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
     // transition: .3s ease -background-color;
-}
-
+  }
+.infos {
+  height: 100px;
+  width: 100vw;
+  background-color: #ebd8b7;
+  position: fixed;
+  z-index: 33;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+    // transition: .3s ease -background-color;
+  }
 
 
 

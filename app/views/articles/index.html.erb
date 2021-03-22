@@ -1,18 +1,22 @@
-<div id="infos">
-  <div class="call">
+<div class="infos">
+  <div id="sideNav">
+    <nav class="nav-bar">
+      <ul>
+        <li><%= link_to "Accueil", root_path(anchor: "banner")  %></li>
+        <li><%= link_to "Présentation", root_path(anchor: "feature")  %></li>
+        <li><%= link_to "Photos", root_path(anchor: "service")  %></li>
+        <li><%= link_to "Avis", root_path(anchor: "testimonial")  %></li>
+        <li><%= link_to "Contact", root_path(anchor: "footer")  %></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="icons">
+    <a href="#footer"><i class="fas fa-map-marker-alt"></i></a>
+  </div>
+  <div id="menuBtn"></div>
+  <div class="icons">
     <a href="tel:+33495710820"><i class="fas fa-phone-alt"></i></a>
-  </div><div id="sideNav">
-  <nav class="nav-bar">
-    <ul>
-      <li><%= link_to "Accueil", root_path(anchor: "banner")  %></li>
-      <li><%= link_to "Présentation", root_path(anchor: "feature")  %></li>
-      <li><%= link_to "Photos", root_path(anchor: "service")  %></li>
-      <li><%= link_to "Avis", root_path(anchor: "testimonial")  %></li>
-      <li><%= link_to "Contact", root_path(anchor: "footer")  %></li>
-    </ul>
-  </nav>
-</div>
-<div id="menuBtn"></div>
+  </div>
 </div>
 <div class="banner-blog">
   <%= image_tag "banner.jpg" %>
@@ -23,6 +27,9 @@
   <p>Salon de Coiffure mixte situé à Porticcio en Corse du Sud est heureux de vous souhaitez la Bienvenue
   </p>
 </div>
+
+
+
 
 <section id="service">
 
@@ -93,7 +100,6 @@
 
 </section>
 
-<%#= render 'shared/footer' %>
 
 
 
