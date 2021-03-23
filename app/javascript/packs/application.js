@@ -25,7 +25,7 @@ require("channels")
 // External imports
 import "bootstrap";
 import { hamburgerResponsive } from'../components/hamburger';
-import { loginModal } from '../components/loginModal';
+// import { loginModal } from '../components/loginModal';
 import { buttonBlogAction } from '../components/buttonBlog';
 import { navbarJs } from'../components/navbar';
 

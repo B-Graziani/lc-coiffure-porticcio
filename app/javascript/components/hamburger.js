@@ -7,19 +7,19 @@ const hamburgerResponsive = () => {
 
   menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('active');
-console.log("begin")
+
 });
 
   menuBtn.onclick = function() {
     if(sideNav.style.right == "-250px"){
       sideNav.style.right = "0";
-      console.log("hello");
+
 
     }
     else {
       sideNav.style.right = "-250px";
 
-      console.log("au revoir");
+
 
     }
   }

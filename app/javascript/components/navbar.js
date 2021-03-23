@@ -1,5 +1,5 @@
 const navbarJs = () => {
-console.log("hello batard");
+
 
 const infos = document.getElementById("infos");
 document.addEventListener('scroll', () => {

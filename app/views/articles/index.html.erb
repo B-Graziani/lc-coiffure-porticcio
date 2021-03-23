@@ -1,4 +1,4 @@
-<div class="infos">
+<div id="infos">
   <div id="sideNav">
     <nav class="nav-bar">
       <ul>
@@ -43,7 +43,7 @@
 
 
   <% if current_user %>
-  <button id="open"><span></span>Ajouter une photo
+  <button id="open">Ajouter une photo
          </button>
 
   <div class="pierre_manu" id="pierre_manu">
@@ -51,7 +51,7 @@
 
       <%= render "shared/form-new-article" %>
 
-      <!--  <button id="close">shit</button> -->
+
     </div>
   </div>
   <% end %>
