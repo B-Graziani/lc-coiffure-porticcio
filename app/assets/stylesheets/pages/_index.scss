@@ -191,7 +191,11 @@ grid-template-columns: 1fr 1fr 1fr ;
   align-items: center;
     // transition: .3s ease -background-color;
   }
-
+@media screen and (min-width: 770px) {
+  .icons {
+    visibility: hidden;
+  }
+}
 
 
 
