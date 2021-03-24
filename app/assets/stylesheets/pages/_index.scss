@@ -40,6 +40,42 @@ grid-template-columns: 1fr 1fr 1fr ;
   width: 100vw;
   transition: opacity 0.3s ease;
 }
+.new-render {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+ a {
+
+    border-radius: 8px;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: #FFF;
+    border: 1px solid #FFF;
+    background: #ebd8b7;
+    position: relative;
+    z-index: 0;
+    transition: color 0.5s;
+    text-align: center;
+    margin-top: 40px;
+
+    &:hover {
+      background: #fff;
+      color: #ebd8b7;
+      border: solid 1px #ebd8b7;
+    }
+ }
+}
 .pierre_manu.show {
   pointer-events: auto;
   opacity: 1;
@@ -53,6 +89,16 @@ grid-template-columns: 1fr 1fr 1fr ;
   width: 600px;
   max-width: 100%;
   text-align: center;
+   .btn {
+    background: #0BC47C;
+    border-radius: 8px;
+    color: #fff;
+    &:hover {
+      background: #fff;
+      color: #0BC47C;
+      border: solid 1px #0BC47C;
+    }
+  }
 }
 
 

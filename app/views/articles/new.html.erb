@@ -1,15 +1,16 @@
+<div class="new-render">
+  <div class="pierre">
+   <%= simple_form_for(@article) do |f| %>
 
-  <%= simple_form_for(@article) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :photo, as: :file %>
-  <%= f.button :submit, "Publier"%>
-  <% end %>
+   <%= f.input :title, label: 'Titre', placeholder: 'Titre'%>
+   <%= f.input :description, label: 'Texte', placeholder: 'Texte' %>
+   <%= f.input :photo, as: :file %>
+   <%= f.button :submit, "Publier"%>
+   <% end %>
 <%= link_to "retour", articles_path  %>
+ </div>
 
-
-
-
+</div>
 
 
 

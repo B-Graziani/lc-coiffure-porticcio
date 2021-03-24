@@ -1,7 +1,3 @@
-
-
-
-
 const loginModal = () => {
 
 const open = document.getElementById("open");
@@ -17,6 +13,10 @@ close.addEventListener( "click" , () => {
 });
 }
 export { loginModal };
+
+
+
+
 
 
 

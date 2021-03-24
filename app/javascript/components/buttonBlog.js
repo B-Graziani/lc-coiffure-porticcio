@@ -7,10 +7,12 @@ const close = document.getElementById("close");
 open.addEventListener( "click" , () => {
   pierre_manu.classList.add('show');
 });
-
+if (close) {
 close.addEventListener( "click" , () => {
   pierre_manu.classList.remove('show');
 });
+
+}
 }
 export { buttonBlogAction };
 
